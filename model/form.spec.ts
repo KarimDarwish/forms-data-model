@@ -64,8 +64,8 @@ describe('Forms', () => {
 
   describe('Submitting Forms', () => {
     describe('Conditional Fields', () => {
-      //this could be inlined into a single test with e.g. it.each
 
+      //this could be inlined into a single test with e.g. it.each([..])
       it('should return field as visible if condition is true', () => {
         // Given
         const form = new Form('Employee Survey');

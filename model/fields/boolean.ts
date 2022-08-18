@@ -1,4 +1,4 @@
-import { Coordinates, Dimensions, Field, FieldValue } from './field';
+import { Coordinates, Dimensions, Field } from './field';
 
 export class Boolean extends Field {
   override dimensions: Dimensions = { height: 1, width: 1 };
@@ -7,7 +7,7 @@ export class Boolean extends Field {
     super(label, placement, required);
   }
 
-  validate(value: FieldValue): boolean {
+  validate(value: boolean): boolean {
     return true;
   }
 }
