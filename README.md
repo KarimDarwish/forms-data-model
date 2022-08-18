@@ -1,5 +1,7 @@
 # Forms
 
+This is supposed to show a PoC data model for an implementation of custom forms
+
 # Approach
 
 I have decided to build on top of the given example and also use an OOP approach using TypeScript.
@@ -31,12 +33,13 @@ Basic functionality here should include:
 
 ### **Trade-offs**
 
-- Designing it as a grid means more complexity but means more freedom for users
+- Designing it as a grid means more complexity but means more freedom for users, an alternate approach would be to just index the fields and render them in order
 
 ### **Future Improvements**
 - Validation about the placement of fields (no overlapping elements, possibly auto-pushing elements if others are moved, etc.)
 - Validation when adding a condition to a field that verifies that the referenced field exists (would probably have to be done in the form)
 - Possible versioning scheme or setting a form to be live/draft (live -> can be submitted, draft -> cannot) 
+- The grid size would need to be specified somewhere/in the form and can then be used to perform further validation
 
 ## Sending a Form
 

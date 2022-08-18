@@ -45,7 +45,7 @@ export class Form {
   }
 
   hasAllRequiredFieldsFilledOut(formValue: FormValue) {
-    const requiredFields = this.fields.filter((field) => field.required);
+    const requiredFields = this._fields.filter((field) => field.required);
 
     return requiredFields
       .map((field) => !!formValue[field.id])
@@ -53,7 +53,7 @@ export class Form {
   }
 
   isValid(formValue: FormValue) {
-    return this.fields.every((field) => field.validate(formValue[field.id]));
+    return this._fields.every((field) => field.validate(formValue[field.id]));
   }
 }
 

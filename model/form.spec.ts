@@ -156,6 +156,7 @@ describe('Forms', () => {
 
         expect(form.isValid(formValue)).toBeTruthy();
       });
+
       it('should be invalid if not all controls are valid', () => {
         // Given
         const form = new Form('Employee Survey');
