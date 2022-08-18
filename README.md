@@ -65,7 +65,7 @@ Basic functionality here should be:
 - Receiving a submission that can then be stored/analyzed
 
 ### **Design Decisions**
-- Validation rules for specific controls are within each control
+- Validation rules for specific controls are within each control, that way we increase cohesion and have an easier time adding new controls
 - Logic if a form as a whole (a submission) is valid is within the form instead of the submission (form now knows about a submission but that seemed acceptable)
 
 
