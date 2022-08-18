@@ -27,8 +27,8 @@ Basic functionality here should include:
 
 - The form will be implemented/designed as a grid, users can place fields horizontally/vertically as they like
 - Fields are implemented using an ``abstract`` class to have shared validation/logic/fields there instead of e.g. using interfaces for this 
-- Fields have dimensions (width/height) based on the grid that cannot be changed by users
-- Email is a separate field (wanted to introduce a ``TextBoxFormat`` at first that could be Email/Text) as this makes e.g. validation simpler
+- Fields have fixed dimensions (width/height) based on the grid that cannot be changed by users
+- Email is a separate field (wanted to introduce a ``TextBoxFormat`` at first that could be Email/Text) as this makes e.g. validations simpler
 
 
 ### **Trade-offs**
